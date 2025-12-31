@@ -2,7 +2,6 @@
 This guide walks you through creating a simple end-to-end CI/CD pipeline using Jenkins with shared libraries for a basic Node.js application. The pipeline will handle building, testing, and deploying the app. 
 
 ## Project GOAL
-
 1. The Node.js app is a basic Express.js server.
 2. Jenkins Shared Libraries: Reusable pipeline code (Groovy scripts) stored in a separate GitHub repo, allowing modular pipelines across projects.
 3. CI: Automatically build and run tests.
@@ -12,7 +11,6 @@ This guide walks you through creating a simple end-to-end CI/CD pipeline using J
 ## Requirements
 1. Jenkins Server
 2. Create two (2) Git Repositories: nodejs-app (for the app) & jenkins-shared-lib (for the shared library)
-3. 
 
 ### Set up Jenkins Server
 Be sure that you have created a Personal Access Token (PAT) on DockerHub and run the following command on your terminal:
