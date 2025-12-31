@@ -1,6 +1,15 @@
 # End-to-End CI/CD Pipeline with Jenkins Shared Libraries for a Simple NodeJS Application
 This guide walks you through creating a simple end-to-end CI/CD pipeline using Jenkins with shared libraries for a basic Node.js application. The pipeline will handle building, testing, and deploying the app. 
 
+## Why Jenkins Shared Library is Useful
+Implementing CI/CD pipelines using Jenkins Shared Libraries provides significant advantages, especially as your organization grows beyond a single application or team. Some of the advantages are:
+
+1. Code reusability across multiple projects.
+2. All pipelines follow same best practices since they call the same shared functions ensuring consistency.
+3. When you need to make changes to the pipeline, you update only the shared library in one place ensuring centralized maintenance and updates.
+4. Scalability: Without shared libraries, maintaining individual pipelines become a nightmare for a company running say 50 - 1000+ microservices. etc.
+
+   
 ## Project GOAL
 1. The Node.js app is a basic Express.js server.
 2. Jenkins Shared Libraries: Reusable pipeline code (Groovy scripts) stored in a separate GitHub repo, allowing modular pipelines across projects.
