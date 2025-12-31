@@ -25,7 +25,6 @@ def call(Map params = [:]) {
             stage('Build Docker Image') {
                 steps {
                     script {
-                        // Build Docker image
                         def imageName = "my-node-app:${env.BUILD_NUMBER}"
                         sh "docker build -t ${imageName} ."
                         echo 'Docker Image Build Completed'
