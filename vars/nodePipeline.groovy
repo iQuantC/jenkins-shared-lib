@@ -26,8 +26,8 @@ def call(Map params = [:]) {
                 steps {
                     script {
                         // Build Docker image
-                        //def imageName = "my-node-app:${env.BUILD_NUMBER}"
-                        //sh "docker build -t ${imageName} ."
+                        def imageName = "my-node-app:${env.BUILD_NUMBER}"
+                        sh "docker build -t ${imageName} ."
                         
                         // Simulate deployment: Run the container (in production, push to registry and deploy to Kubernetes/EC2)
                         //sh "docker stop my-node-app || true"
@@ -35,7 +35,7 @@ def call(Map params = [:]) {
                         //sh "docker run -d -p 3000:3000 --name my-node-app ${imageName}"
                         
                         //echo 'Deployment completed. App running at http://localhost:3000'
-                        echo 'Deployment soon'
+                        //echo 'Deployment soon'
                     }
                 }
             }
